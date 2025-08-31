@@ -1,11 +1,118 @@
-<html><head><title>Welcome to Level Zero Labs</title></head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to Level Zero Labs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Reset some defaults */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: #181926;
+      color: #eaeaea;
+      font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      background: #232334;
+      padding: 2.5rem 2rem 2rem 2rem;
+      border-radius: 14px;
+      box-shadow: 0 4px 18px 0 rgba(0,0,0,0.18), 0 1.5px 4px 0 rgba(0,0,0,0.12);
+      width: 100%;
+      max-width: 1024px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.2rem;
+      color: #97b4fa;
+      margin-bottom: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-shadow: 0 2px 16px #283c6044;
+    }
+    p {
+      font-size: 1.08rem;
+      margin-bottom: 1.3rem;
+      color: #c4c7d1;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      text-align: left;
+      margin: 0 auto;
+      max-width: 700px;
+    }
+    li {
+      background: #1d1f2b;
+      margin-bottom: 1rem;
+      padding: 1.1rem 1rem 1rem 1.1rem;
+      border-radius: 9px;
+      box-shadow: 0 0.5px 1.5px rgba(44,62,80,0.06);
+      transition: background 0.19s;
+      color: #f1f4fa;
+    }
+    li:hover {
+      background: #23263a;
+    }
+    a {
+      color: #8ac4fa;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.08em;
+      transition: color 0.16s;
+      word-break: break-all;
+    }
+    a:hover {
+      color: #e0e7ff;
+      text-decoration: underline;
+    }
+    strong {
+      font-weight: 700;
+    }
+
+    @media (max-width: 1080px) {
+      .container {
+        max-width: 99vw;
+      }
+      ul {
+        max-width: 95vw;
+      }
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 1.3rem 0.5rem 1rem 0.5rem;
+      }
+      ul {
+        max-width: 99vw;
+      }
+    }
+  </style>
+</head>
 <body>
-  <h1>Welcome to Level Zero Labs!</h1>
-  <p>Our projects include:</p>
-  <ul>
-    <li><strong><a href="https://canadakittens.com">CanadaKittens.com:</strong> Search for adorable kittens and cats from all over Canada!</li>
-    <li><strong><a href="https://canadakittens.com">CanadaSooq.com:</strong> Search across multiple marketplaces Canada-wide to find what you're looking for!</li>
-    <li><strong><a href="https://canadakittens.com">BookDashboard.com:</strong> Track all your book reviews and ratings from 9+ platforms in one convenient dashboard!</li>
-  </ul>
+  <div class="container">
+    <h1>Welcome to Level Zero Labs!</h1>
+    <p>Our projects include:</p>
+    <ul>
+      <li>
+        <a href="https://canadakittens.com" target="_blank" rel="noopener"><strong>CanadaKittens.com:</strong></a>
+        <span> Search for adorable kittens and cats from all over Canada!</span>
+      </li>
+      <li>
+        <a href="https://canadasooq.com" target="_blank" rel="noopener"><strong>CanadaSooq.com:</strong></a>
+        <span> Search across multiple marketplaces Canada-wide to find what you're looking for!</span>
+      </li>
+      <li>
+        <a href="https://bookdashboard.com" target="_blank" rel="noopener"><strong>BookDashboard.com:</strong></a>
+        <span> Track all your book reviews and ratings from 9+ platforms in one convenient dashboard!</span>
+      </li>
+    </ul>
+  </div>
 </body>
 </html>
